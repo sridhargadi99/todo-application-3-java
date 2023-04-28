@@ -1,0 +1,16 @@
+2023-04-28 12:12:51 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TODOLIST" not found (this database is empty); SQL statement:
+select * from todolist [42104-214]
+2023-04-28 12:20:53 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "insert into todolist(todo,priority,status) values('Buy Groceries', 'MEDIUM', 'TO DO"");\000d\000ainsert into todolist(todo,priority,status) values('Learning from NxtWave', 'HIGH', 'IN PROGRESS[*]"");\000d\000ainsert into todolist(todo,priority,status) values('Go for a Run', 'MEDIUM','DONE');"; SQL statement:
+insert into todolist(todo,priority,status) values('Buy Groceries', 'MEDIUM', 'TO DO");
+insert into todolist(todo,priority,status) values('Learning from NxtWave', 'HIGH', 'IN PROGRESS");
+insert into todolist(todo,priority,status) values('Go for a Run', 'MEDIUM','DONE'); [42000-214]
+2023-04-28 12:21:40 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "insert into todolist(todo,priority,status) values('Buy Groceries', 'MEDIUM', 'TO DO"");\000d\000ainsert into todolist(todo,priority,status) values('Learning from NxtWave', 'HIGH', 'IN PROGRESS');\000d\000ainsert into todolist(todo,priority,status) values('Go for a Run', 'MEDIUM','DONE[*]');"; SQL statement:
+insert into todolist(todo,priority,status) values('Buy Groceries', 'MEDIUM', 'TO DO");
+insert into todolist(todo,priority,status) values('Learning from NxtWave', 'HIGH', 'IN PROGRESS');
+insert into todolist(todo,priority,status) values('Go for a Run', 'MEDIUM','DONE'); [42000-214]
+2023-04-28 12:23:19 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TODOLIST" not found (this database is empty); SQL statement:
+select * from todolist [42104-214]
